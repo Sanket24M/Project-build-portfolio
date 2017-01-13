@@ -1,6 +1,6 @@
 
 	html, body {
-		width: 100%;
+		/*width: 100%;*/
 		height:100%;
 	}
 
@@ -24,29 +24,37 @@
 	}
 
 	
+	/*making logo responsive to screen sizes*/
+
+	@media screen and (min-width: 730px) {
+		.logo img {
+			width: 50%;
+			border: 3px solid #73AD21;
+		}
 		
+		h1 {
+		font-size: 250%;
+		}
+		h3 {
+		font-size: 140%;
+	}
 
-		@media screen and (min-width: 730px) {
-			.logo img {
-				width: 50%;
-				border: 3px solid #73AD21;
-			}
-			
-		}
 
-		@media screen and (max-width: 729px) {
-			.logo img {
-				width: 70%;
-				border: 3px solid #73AD21;
-			}
-			
+	}
+
+	@media screen and (max-width: 729px) {
+		.logo img {
+			width: 70%;
+			border: 3px solid #73AD21;
 		}
-		@media screen and (max-width: 509px) {
-			.logo img {
-				width: 100%;
-				border: 3px solid #73AD21;
-			}
+		
+	}
+	@media screen and (max-width: 509px) {
+		.logo img {
+			width: 100%;
+			border: 3px solid #73AD21;
 		}
+	}
 		
 	
 
@@ -59,26 +67,31 @@
 	h1, h3 {
 		margin-top: 5px;
 		margin-bottom: 5px;
+		margin-right: 3%;
 		font-family: 'Lato', sans-serif;
 		font-weight: 100;
 
 	}
 
 	h1 {
-		font-size: 250%;
+		/*font-size: 250%;*/
 		margin-top: 2%;
 	}
 
-	h3 {
+	/*h3 {
 		font-size: 140%;
-	}
+	}*/
+
 
 	/*hotizontal rule*/
 
 	hr {
 		display: flex;
 		width: 100%;
+		height: 2PX;
+    	background-color: #7d97ad;
 	}
+
 
 	/*2nd child div*/
 
@@ -131,12 +144,6 @@
 		border: 0 0;
 	}
 
-	.fig1, .fig2, .fig3 {
-		display: flex;
-		flex-wrap: wrap;
-		width:80%;
-	}
-
 	.fig2 {
 		margin-left: 2%;
 		margin-right: 2%;
@@ -155,6 +162,36 @@
 			font-family: 'Lato', sans-serif;
 			font-weight: bolder;
 			text-align: center;
+	}
+
+
+	@media screen and (min-width: 700px) {
+		.fig1, .fig2, .fig3 {
+		display: flex;
+		flex-wrap: wrap;
+		width:80%;
+	}
+		
+	}
+
+	@media screen and (max-width: 699px) {
+		.container3 {
+			flex-direction: column;
+		}
+
+		.container4 {
+			display: flex;
+		} 
+		.fig1, .fig2, .fig3{
+			width: 50%;
+			margin: auto;
+		}
+		/*.fig3 {
+			width: 50%;
+			margin: auto;
+
+		}*/
+		
 	}
 
 
