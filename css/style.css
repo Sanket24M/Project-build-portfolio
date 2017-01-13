@@ -3,6 +3,13 @@
 		height:100%;
 	}
 
+	@media screen and (min-width: 1000px) {
+		.container1 {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
 	/*main container div*/
 	.container1 {
 		display:flex;
@@ -21,7 +28,6 @@
 
 	.logo {
 		width:40%;
-		border: 3px solid #73AD21;
 	}
 
 	
@@ -30,7 +36,6 @@
 	@media screen and (min-width: 730px) {
 		.logo img {
 		width: 50%;
-		border: 3px solid #73AD21;
 		}
 
 		h1 {
@@ -46,14 +51,12 @@
 	@media screen and (max-width: 729px) {
 		.logo img {
 		width: 70%;
-		border: 3px solid #73AD21;
 		}
 		
 	}
 	@media screen and (max-width: 509px) {
 		.logo img {
 		width: 100%;
-		border: 3px solid #73AD21;
 		}
 	}
 		
@@ -61,7 +64,6 @@
 
 	.name {
 		width:60%;
-		border: 3px solid #73AD21;
 		text-align: -webkit-right;
 	}
 
@@ -95,8 +97,8 @@
 	/*2nd child div*/
 
 	.main {
-		width:100%;
-		border: 3px solid #73AD21;
+		width:100%;	
+		margin-top: 12px;
 	}
 
 	.banner img {
@@ -110,16 +112,13 @@
 	.bottom {
 		display:flex;
 		flex-wrap: wrap;
-		border: 3px solid #73AD21;
 		width: 100%;
-
 	}
 
 
 	h2 {
 		width:100%;
-		border: 3px solid #73AD21;
-		margin-bottom: 0;
+		margin-bottom: 15px;
 		font-size: 2em;
 		font-family: 'Lato', sans-serif;
 		color: #7d97ad;
@@ -130,9 +129,10 @@
 	.container3 {
 		width: 100%;
 		display: flex;
-		border: 3px solid #73AD21;
-
-	}
+		border-bottom: 1px solid #d4d8ce;
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+	}	
 
 	figure {
 		padding: 0 0;
@@ -180,4 +180,37 @@
 		margin-right: auto;
 		margin-top: 5px;
 		}
+	}
+
+
+/*Adding socialmedia icons*/
+	footer {
+    text-align: center;
+    margin:auto;
+}
+
+	div#social {
+	    line-height: 2em;
+		border-bottom: 2px solid #d4d8ce;
+	}
+
+	div#social a {
+	    margin: 0 1em 0 0;
+	}
+	a {
+	    color: #4183C4;
+	    font-weight: 300;
+	    text-decoration: none;
+	}
+
+	[class*="zocial-"]:before {
+	  color: black;
+	  display: inline-block;
+	  font-family: 'zocial', sans-serif;
+	  text-shadow: 3px 3px 3px #aaa;
+	  width: 2em;
+	}
+
+	a:hover [class*="zocial-"]:before {
+	  color: #3d85c6;
 	}
