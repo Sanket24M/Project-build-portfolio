@@ -19,14 +19,41 @@
 	}
 
 	.logo {
-		width:50%;
+		width:40%;
 		border: 3px solid #73AD21;
 	}
 
-	.name {
-		width:50%;
-		border: 3px solid #73AD21;
+	
+		
 
+		@media screen and (min-width: 730px) {
+			.logo img {
+				width: 50%;
+				border: 3px solid #73AD21;
+			}
+			
+		}
+
+		@media screen and (max-width: 729px) {
+			.logo img {
+				width: 70%;
+				border: 3px solid #73AD21;
+			}
+			
+		}
+		@media screen and (max-width: 509px) {
+			.logo img {
+				width: 100%;
+				border: 3px solid #73AD21;
+			}
+		}
+		
+	
+
+	.name {
+		width:60%;
+		border: 3px solid #73AD21;
+		text-align: -webkit-right;
 	}
 
 	h1, h3 {
@@ -39,6 +66,7 @@
 
 	h1 {
 		font-size: 250%;
+		margin-top: 2%;
 	}
 
 	h3 {
