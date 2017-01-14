@@ -1,6 +1,6 @@
 
-	html, body {
-		height:100%;
+	body {
+		width: 100%;
 	}
 
 	@media screen and (min-width: 1000px) {
@@ -14,10 +14,19 @@
 	.container1 {
 		display:flex;
 		flex-wrap: wrap;
-		width:100%;
-		height:100%;
+/*		width:100%;
+*/		
+		
 	}
-
+	
+	@media  and (min-width:1000px) {
+		.container1 {
+			width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+	}
 
 
 	/*1st child div*/
@@ -150,8 +159,9 @@
 	}
 
 	.link {
-		text-align:center;
-		display:block;
+		display: block;
+		text-align: center;
+		width: 100%;
 	}
 
 	figcaption {
@@ -181,7 +191,10 @@
 		margin-top: 5px;
 		}
 	}
-
+	
+	p {
+		margin: 0 0;
+	}
 
 /*Adding socialmedia icons*/
 	footer {
